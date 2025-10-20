@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Profil</a></li>
-            <li><a href="#">Kegiatan</a></li>
-            <li><a href="#">Kontak</a></li>
-        </ul>
-    </nav>
+    <header class="nav">
+        <div class="nav-inner">
+            <nav aria-label="Main navigation">
+                <a href="#">Home</a>
+                <a href="#">Produk</a>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </nav>
+        </div>
+    </header>
     <div class="container">
         <header class="hero-section">
             <h1>SMKN 2 Bandung</h1>

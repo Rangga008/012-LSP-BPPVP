@@ -1,0 +1,254 @@
+<?php
+
+?>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SMKN 2 Bandung</title>
+    <style>
+    :root {
+        --bg: #f2f4f7;
+        --card: #ffffff;
+        --accent: #2563eb;
+        --muted: #6b7280;
+        --container-max: 1100px;
+        --gap: 20px;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background: var(--bg);
+        color: #111827;
+        line-height: 1.4;
+    }
+
+    /* Navbar */
+    header.nav {
+        background: linear-gradient(90deg, #ffffffcc, #f8fafc);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(4px);
+    }
+
+    .nav-inner {
+        max-width: var(--container-max);
+        margin: 0 auto;
+        padding: 12px 20px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .brand {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 14px;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: var(--accent);
+    }
+
+    /* Hero */
+    .hero {
+        max-width: var(--container-max);
+        margin: 24px auto 0;
+        padding: 36px 20px;
+        background: linear-gradient(180deg, #e6f0ff 0%, #ffffff 100%);
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .hero p {
+        margin: 0;
+        color: var(--muted);
+    }
+
+    /* Main content area with sidebar on the right */
+    .container {
+        max-width: var(--container-max);
+        margin: var(--gap) auto;
+        padding: 0 20px 40px;
+    }
+
+    /* content wrapper: left main + right sidebar */
+    .content {
+        display: flex;
+        gap: var(--gap);
+        align-items: stretch;
+        /* ensure equal height boxes if needed */
+    }
+
+    .main {
+        flex: 1;
+        background: var(--card);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+        min-height: 200px;
+    }
+
+    .sidebar {
+        width: 300px;
+        background: #fafafa;
+        padding: 18px;
+        border-radius: 8px;
+        border: 1px solid rgba(15, 23, 42, 0.03);
+        min-height: 200px;
+        /* the sidebar lives inside the .content flexbox,
+				 so it will never overlap hero/footer */
+    }
+
+    .card {
+        background: white;
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+    }
+
+    footer {
+        max-width: var(--container-max);
+        margin: 0 auto 40px;
+        padding: 18px 20px;
+        color: var(--muted);
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Responsive: stack columns on small screens */
+    @media (max-width:880px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;
+        }
+
+        .hero {
+            margin: 16px 20px 0;
+        }
+
+        .container {
+            padding: 0 16px 32px;
+        }
+
+        footer {
+            padding: 14px 16px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <div class="brand">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden>
+                    <rect width="24" height="24" rx="6" fill="#2563eb"></rect>
+                    <path d="M7 12h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                </svg>
+                SMKN 2 Bandung
+            </div>
+            <nav aria-label="Main navigation">
+                <a href="#">Home</a>
+                <a href="#">Produk</a>
+                <a href="#">Kontak</a>
+                <a href="layout/index.php">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" role="region" aria-label="Hero">
+        <div class="hero-inner">
+            <h1>Selamat datang di contoh layout</h1>
+            <p>Navbar, hero, area konten dengan sidebar di kanan, dan footer. Sidebar berada di dalam area konten
+                sehingga tidak masuk ke hero atau footer.</p>
+        </div>
+    </section>
+
+
+    <main class="container" role="main">
+
+        <div class="content">
+            <aside class="sidebar" aria-label="Sidebar">
+                <div class="card">
+                    <h4>Sidebar</h4>
+                    <p>Konten sidebar dapat berisi navigasi tambahan, informasi, atau widget lainnya.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h5>Link Cepat</h5>
+                    <ul style="padding-left:18px;margin:8px 0 0;color:var(--muted);">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h5>Informasi</h5>
+                    <p style="color:var(--muted);margin:0;">Widget kecil atau iklan bisa ditempatkan di sini.</p>
+                </div>
+            </aside>
+            <section class="main" aria-label="Konten utama">
+                <article class="card">
+                    <h2>Konten Utama</h2>
+                    <p>Ini adalah area konten utama. Tambahkan artikel, gambar, atau komponen lain di sini. Area ini
+                        akan mengambil ruang yang tersisa, sedangkan sidebar tetap di kanan.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Artikel Tambahan</h3>
+                    <p>Contoh paragraf untuk menunjukkan bagaimana konten bertumpuk dalam kolom utama.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Galeri / Daftar</h3>
+                    <p>Masukkan elemen lain sesuai kebutuhan.</p>
+                </article>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        © 2025 Contoh. Semua hak cipta dilindungi.
+    </footer>
+</body>
+
+</html>
+</div>

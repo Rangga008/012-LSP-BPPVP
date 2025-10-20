@@ -1,0 +1,100 @@
+/* Reset Dasar */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+.container {
+	max-width: 1000px; /* Batasan lebar halaman */
+	margin: 0 auto;
+	padding: 10px;
+	background-color: rgb(239, 55, 55);
+}
+
+/* Area Gambar Utama Besar (Hero) */
+.hero-section {
+	width: 100%;
+	height: 300px;
+	margin-bottom: 20px;
+	background-image: url("img/crpto.jpeg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-section .main-image {
+	display: none; /* Hide the redundant image */
+}
+
+nav {
+	background-color: #333;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.hero-section h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 2.5em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	margin: 0;
+}
+
+.gallery {
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.gallery-heading {
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	color: #333;
+}
+
+.gallery-flex-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.gallery-item {
+	flex: 1;
+	min-width: 0;
+	text-align: center;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 200px; /* Set fixed height for uniform size */
+	object-fit: cover; /* Crop images to fit without distortion */
+	display: block;
+	border-radius: 5px;
+	border: 3px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Bagian Teks "Tentang Kami" */
+.about-us {
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+
+.about-us h2 {
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.about-us p {
+	line-height: 1.6;
+	color: #000000;
+	text-align: justify;
+}

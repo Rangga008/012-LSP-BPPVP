@@ -3,7 +3,8 @@
         <div class="content">
             <div class="brand">
                 <h2>SMKN 2 Bandung</h2>
-                <img style="width: 30%; margin-bottom: 30px;" src="img/LOGO SMK 2.png" alt="Logo" class="hero-image">
+                <img style="width: 30%; margin-bottom: 30px;" src="/012-LSP-BPPVP/Template/Landing/img/LOGO SMK 2.png"
+                    alt="Logo" class="hero-image">
                 <p>
                     SMKN 2 Bandung adalah institusi pendidikan yang berkomitmen untuk memberikan
                     pendidikan berkualitas tinggi dan mempersiapkan siswa untuk masa depan yang sukses.
@@ -12,11 +13,11 @@
             <div class="column">
                 <h4>Layanan</h4>
                 <ul>
-                    <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Data Siswa</a></li>
+                    <li><a href="/012-LSP-BPPVP/Template/Landing/index.php">Beranda</a></li>
+                    <li><a href="/012-LSP-BPPVP/Template/Landing/data-siswa.php">Data Siswa</a></li>
                     <li><a href="#">Guru</a></li>
                     <li><a href="#">Jurusan</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="/012-LSP-BPPVP/Template/Landing/auth/login.php">Login</a></li>
                 </ul>
             </div>
             <div class="column">

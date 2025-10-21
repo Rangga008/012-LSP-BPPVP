@@ -5,7 +5,7 @@
             <p>
                 Data siswa yang terorganisir dengan baik untuk memudahkan pengelolaan dan akses informasi.
             </p>
-            <button>Siswa</button>
+            <button onclick="window.location.href='/012-LSP-BPPVP/Template/Landing/data-siswa.php'">Siswa</button>
         </div>
         <div class="card">
             <h3>Data Guru</h3>

@@ -6,6 +6,6 @@
             Jangan khawatir tentang pengelolaan data siswa Anda. Sistem kami menyediakan solusi
             yang efisien dan mudah digunakan untuk mengelola informasi siswa dengan aman dan terorganisir
         </p>
-        <button>Jelajahi</button>
+        <button onclick="window.location.href='/012-LSP-BPPVP/Template/Landing/data-siswa.php'">Jelajahi</button>
     </div>
 </section>

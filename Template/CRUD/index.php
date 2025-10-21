@@ -130,6 +130,7 @@ $num = $stmt->rowCount();
     <div class="container">
         <h1>Data Users</h1>
         <a href="create.php" class="btn btn-primary">+ Tambah User Baru</a>
+        <a href="tes.php" class="btn btn-primary">Home</a>
 
         <?php if(isset($_GET['msg'])): ?>
         <div class="alert alert-success">
@@ -171,6 +172,7 @@ $num = $stmt->rowCount();
                     echo "<tr><td colspan='6' style='text-align:center;'>Tidak ada data</td></tr>";
                 }
                 ?>
+
             </tbody>
         </table>
     </div>

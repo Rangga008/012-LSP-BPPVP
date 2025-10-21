@@ -37,16 +37,46 @@ if (!isset($_SESSION['username'])) {
                     <div class="dashboard-card">
                         <h3>Data Siswa</h3>
                         <p>Kelola data siswa sekolah</p>
-                        <a href="/012-LSP-BPPVP/Template/Landing/admin/data-siswa-admin.php" class="dashboard-btn">Lihat
+                        <a href="data-siswa-admin.php" class="dashboard-btn">Lihat
                             Data
                             Siswa</a>
                     </div>
 
                     <div class="dashboard-card">
+                        <h3>Data Guru</h3>
+                        <p>Kelola data guru sekolah</p>
+                        <a href="data-guru-admin.php" class="dashboard-btn">Lihat
+                            Data
+                            Guru</a>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Data Jurusan</h3>
+                        <p>Kelola data jurusan sekolah</p>
+                        <a href="data-jurusan-admin.php" class="dashboard-btn">Lihat
+                            Data
+                            Jurusan</a>
+                    </div>
+
+                    <div class="dashboard-card">
                         <h3>Tambah Siswa</h3>
                         <p>Tambahkan data siswa baru</p>
-                        <a href="/012-LSP-BPPVP/Template/Landing/admin/tambah-siswa.php" class="dashboard-btn">Tambah
+                        <a href="tambah-siswa.php" class="dashboard-btn">Tambah
                             Siswa</a>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Tambah Guru</h3>
+                        <p>Tambahkan data guru baru</p>
+                        <a href="tambah-guru.php" class="dashboard-btn">Tambah
+                            Guru</a>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Tambah Jurusan</h3>
+                        <p>Tambahkan data jurusan baru</p>
+                        <a href="tambah-jurusan.php" class="dashboard-btn">Tambah
+                            Jurusan</a>
                     </div>
 
                     <div class="dashboard-card">

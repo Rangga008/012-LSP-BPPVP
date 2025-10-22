@@ -5,21 +5,21 @@
             <p>
                 Data siswa yang terorganisir dengan baik untuk memudahkan pengelolaan dan akses informasi.
             </p>
-            <button onclick="window.location.href='/012-LSP-BPPVP/Template/Landing/data-siswa.php'">Siswa</button>
+            <button onclick="window.location.href='/012-LSP-BPPVP/Tugas/Tugas-2/data-siswa.php'">Siswa</button>
         </div>
         <div class="card">
             <h3>Data Guru</h3>
             <p>
                 Profil guru lengkap untuk mendukung proses pembelajaran yang efektif dan terstruktur.
             </p>
-            <button>Guru</button>
+            <button onclick="window.location.href='/012-LSP-BPPVP/Tugas/Tugas-2/data-guru.php'">Guru</button>
         </div>
         <div class="card">
             <h3>Jurusan</h3>
             <p>
                 Informasi tentang berbagai jurusan yang ditawarkan untuk membantu siswa memilih karir mereka.
             </p>
-            <button>Jelajahi</button>
+            <button onclick="window.location.href='/012-LSP-BPPVP/Tugas/Tugas-2/data-jurusan.php'">Jelajahi</button>
         </div>
     </div>
 </section>

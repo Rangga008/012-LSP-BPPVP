@@ -1,8 +1,0 @@
-- [x] Create data-guru.php page similar to data-siswa.php
-- [x] Create guru/ directory
-- [x] Create guru/tabel-data-guru.php for displaying guru data table
-- [x] Create data-jurusan.php page
-- [x] Create jurusan/ directory
-- [x] Create jurusan/tabel-data-jurusan.php for displaying jurusan data table
-- [x] Update Layout/content.php to add onclick links for Guru and Jurusan buttons
-- [x] Update Layout/header.php to link to public data-guru.php and data-jurusan.php instead of admin pages

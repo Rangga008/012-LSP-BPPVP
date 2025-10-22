@@ -37,7 +37,7 @@ mysqli_close($conn);
     <script src="../js/script.js" defer></script>
     <title>Edit Siswa</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
-    <link rel="icon" href="/012-LSP-BPPVP/Template/Landing/img/LOGO SMK 2.png">
+    <link rel="icon" href="../img/LOGO SMK 2.png">
 </head>
 
 <body>
@@ -53,7 +53,7 @@ mysqli_close($conn);
                     Gagal mengupdate data siswa. Silakan coba lagi.
                 </div>
                 <?php endif; ?>
-                <form action="/012-LSP-BPPVP/Template/Landing/controller/edit.siswa.php" method="POST">
+                <form action="../controller/edit.siswa.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo $siswa['id']; ?>">
                     <div class="form-group">
                         <label for="nama">Nama:</label>
@@ -77,8 +77,7 @@ mysqli_close($conn);
                     </div>
                     <div class="button-group">
                         <button type="submit" class="btn-submit">Update Siswa</button>
-                        <a href="/012-LSP-BPPVP/Template/Landing/admin/view-siswa.php?id=<?php echo $siswa['id']; ?>"
-                            class="btn-back">Batal</a>
+                        <a href="view-siswa.php?id=<?php echo $siswa['id']; ?>" class="btn-back">Batal</a>
                     </div>
                 </form>
             </div>

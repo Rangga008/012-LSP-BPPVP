@@ -8,7 +8,7 @@
     <script src="../js/auth.js" defer></script>
     <title>SMKN 2 Bandung</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/LOGO SMK 2.png">
+    <link rel="icon" href="img/LOGO SMK 2.png">
 </head>
 
 <body>

@@ -37,7 +37,7 @@ mysqli_close($conn);
     <script src="../js/script.js" defer></script>
     <title>View Siswa</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
-    <link rel="icon" href="/012-LSP-BPPVP/Template/Landing/img/LOGO SMK 2.png">
+    <link rel="icon" href="../img/LOGO SMK 2.png">
 </head>
 
 <body>
@@ -70,9 +70,8 @@ mysqli_close($conn);
                     <p><?php echo htmlspecialchars($siswa['alamat'] ?? ''); ?></p>
                 </div>
                 <div class="button-group">
-                    <a href="/012-LSP-BPPVP/Template/Landing/admin/edit-siswa.php?id=<?php echo $siswa['id']; ?>"
-                        class="btn-edit">Edit</a>
-                    <a href="/012-LSP-BPPVP/Template/Landing/admin/data-siswa-admin.php" class="btn-back">Kembali</a>
+                    <a href="edit-siswa.php?id=<?php echo $siswa['id']; ?>" class="btn-edit">Edit</a>
+                    <a href="data-siswa-admin.php" class="btn-back">Kembali</a>
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
-    <title>Tambah Siswa</title>
+    <title>Tambah Admin</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
     <link rel="icon" href="../img/LOGO SMK 2.png">
 </head>
@@ -22,33 +22,35 @@ if (!isset($_SESSION['username'])) {
         <?php
         include '../Layout/header.php';
         ?>
-        <section class="tambah-siswa-section">
+        <section class="tambah-admin-section">
             <div class="form-container">
-                <h1>Tambah Data Siswa</h1>
+                <h2>Tambah Admin</h2>
                 <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
                 <div class="error-message">
-                    Gagal menambahkan data siswa. Silakan coba lagi.
+                    Gagal menambahkan admin. Username sudah ada atau terjadi kesalahan.
                 </div>
                 <?php endif; ?>
-                <form action="../controller/tambah.siswa.php" method="POST">
+                <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
+                <div class="success-message">
+                    Admin berhasil ditambahkan!
+                </div>
+                <?php endif; ?>
+                <form action="../controller/tambah.admin.php" method="POST">
                     <div class="form-group">
-                        <label for="nama">Nama:</label>
-                        <input type="text" id="nama" name="nama" required>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
                     </div>
                     <div class="form-group">
-                        <label for="nis">NIS:</label>
-                        <input type="text" id="nis" name="nis" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div class="form-group">
-                        <label for="Jurusan">Jurusan:</label>
-                        <input type="text" id="Jurusan" name="Jurusan" required>
+                        <label for="confirm_password">Konfirmasi Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
                     </div>
-                    <div class="form-group">
-                        <label for="alamat">Alamat:</label>
-                        <textarea id="alamat" name="alamat" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Tambah Siswa</button>
+                    <button type="submit" class="btn-submit">Tambah Admin</button>
                 </form>
+                <a href="data-admin.php" class="btn-back">Kembali ke Data Admin</a>
             </div>
         </section>
         <?php

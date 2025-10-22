@@ -16,7 +16,7 @@ if (!isset($_SESSION['username'])) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Data Jurusan Admin</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
-    <link rel="icon" href="/012-LSP-BPPVP/Template/Landing/img/LOGO SMK 2.png">
+    <link rel="icon" href="../img/LOGO SMK 2.png">
 </head>
 
 <body>
@@ -37,7 +37,9 @@ if (!isset($_SESSION['username'])) {
                     Gagal menghapus data jurusan. Silakan coba lagi.
                 </div>
                 <?php endif; ?>
-                <a href="tambah-jurusan.php" class="btn-add">Tambah Jurusan</a>
+                <button onclick="window.location.href='tambah-jurusan.php'"
+                    class="btn-add action-buttons btn-view">Tambah Jurusan</button>
+                <br>
                 <?php
                 include '../config/database.php';
                 include '../controller/data.jurusan.php';

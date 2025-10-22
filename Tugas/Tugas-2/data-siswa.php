@@ -10,7 +10,7 @@ session_start();
     <script src="js/script.js" defer></script>
     <title>Data Siswa</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
-    <link rel="icon" href="/012-LSP-BPPVP/Template/Landing/img/LOGO SMK 2.png">
+    <link rel="icon" href="img/LOGO SMK 2.png">
 </head>
 
 <body>

@@ -14,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <script src="../js/script.js" defer></script>
     <title>Dashboard Admin</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge device-width, initial-scale=1.0">
-    <link rel="icon" href="/012-LSP-BPPVP/Template/Landing/img/LOGO SMK 2.png">
+    <link rel="icon" href="../img/LOGO SMK 2.png">
 </head>
 
 <body>
@@ -83,6 +83,18 @@ if (!isset($_SESSION['username'])) {
                         <h3>Laporan</h3>
                         <p>Generate laporan sekolah</p>
                         <a href="#" class="dashboard-btn">Buat Laporan</a>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Data Admin</h3>
+                        <p>Kelola data admin sistem</p>
+                        <a href="data-admin.php" class="dashboard-btn">Lihat Data Admin</a>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>Tambah Admin</h3>
+                        <p>Tambahkan admin baru</p>
+                        <a href="tambah-admin.php" class="dashboard-btn">Tambah Admin</a>
                     </div>
 
                     <div class="dashboard-card">
